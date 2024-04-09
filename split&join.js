@@ -26,7 +26,7 @@ console.log(word.split(''));
 console.log(word);
 
 
-const joinARR= ['hey, sup, namaste, aslam walikum, sassri akal'];
+const joinARR= ['hey', 'sup', 'namaste', 'aslam walikum', 'sassri akal'];
 console.log(joinARR.join(', '));
 console.log(joinARR);
 
@@ -48,6 +48,12 @@ const csvToNestedArr = (csv) => {
     return output;
 }
 
-console.table(csvToNestedArr(csvUser));
+const nestedArr = csvToNestedArr(csvUser);
+console.table(nestedArr); 
+
+// Accessing content of the nested array
+for (let i = 0; i < nestedArr.length; i++) {
+    console.log(`Row ${i}:`, nestedArr[i]);
+}
 
 
