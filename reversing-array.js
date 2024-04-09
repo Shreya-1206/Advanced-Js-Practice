@@ -43,3 +43,8 @@ const isPalindrome = (word) => {
 };
 console.log(isPalindrome('civic') ? "Yes its a palindrome 😁" : "No its not a palindrome 🙃");
 console.log(isPalindrome('Hello') ? "Yes its a palindrome 😁" : "No its not a palindrome 🙃");
+
+
+const reverse = [1,2,3,4];
+console.log(reverse.reverse());
+console.log(reverse);
