@@ -1,5 +1,6 @@
-# Advance JavaScript Practice 
+# Advance JavaScript Practice of Arrays
 ## Array Methods 
-## Objects Methods 
-## Strings more about it
-## Date Time
+# Reverse
+# split() , join()
+# forEach
+# find () , findIndex() , findAll()
