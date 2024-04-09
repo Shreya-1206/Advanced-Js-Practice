@@ -28,3 +28,18 @@ const tempRec = [
 for(let x of tempRec.reverse()) {
     console.log(`${x.date} : Max-Temp - ${x.maxTemp} || Min-Temp - ${x.minTemp}`);
 }
+
+//palindrome chk
+
+const isPalindrome = (word) => {
+    let worArr =[];
+    let revArr = [];
+
+    for (let i of word ) {
+        worArr.push(i);
+        revArr.push(i);
+    }
+    return worArr.toString() === revArr.reverse().toString();
+};
+console.log(isPalindrome('civic') ? "Yes its a palindrome 😁" : "No its not a palindrome 🙃");
+console.log(isPalindrome('Hello') ? "Yes its a palindrome 😁" : "No its not a palindrome 🙃");
