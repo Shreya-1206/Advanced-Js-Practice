@@ -26,4 +26,23 @@ console.log(arrFrom2);
 
 const isPalindrome = word => Array.from(word).reverse().join('') === word;
 
-console.log(isPalindrome("madam")); 
+console.log(`Chk Palindrome : ${isPalindrome("madam")}`); 
+
+
+//array from methods returns arrya of elements using call back function
+
+const icecreamFlavours = (flavours) => {
+   return Array.from((flavours), elem => 
+        `The flavour of  ice cream is ${elem} 🍦 ! `);
+};
+
+console.log(icecreamFlavours(["Missisipi Mud Pie", "Bavarian Drak Chocolate", "Guava Chilli"]));
+
+//generate unquie number 
+const generateIdNum = (count) => { 
+    return Array.from(new Array(count), (elem) =>  parseInt(Math.random()* 1000))};
+
+console.log(generateIdNum(15));
+
+/* What are the arguments that parseInt() accepts?
+String and radix*/
