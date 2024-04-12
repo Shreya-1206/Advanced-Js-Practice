@@ -39,4 +39,4 @@ const distanceMatrix =
        arr2.flatMap(([p1,p2])=> calDistance(p1, p2));
 
 
-console.log(`Shortest distance is : ${distanceMatrix}`)       
+console.log(`Shortest distance is : ${distanceMatrix}`)    
