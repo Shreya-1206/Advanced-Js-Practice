@@ -34,3 +34,35 @@ function totalCost(arr) {
 }
 
 console.log(`Total cost of shopped items is 🛍️ : ${totalCost(shoppingBag)}`);
+
+
+const array2 = [
+    1,
+    2,
+    1,
+    56,
+    4,
+    9,
+    87,
+    9,
+    {
+        id :10,
+        name :"shreya"
+    },
+    45,
+    45,
+    {
+        id :10,
+        name :"shreya"
+    }
+
+];
+
+function removeDups(arr) {
+    return arr.reduce((acc,curr) => 
+        !acc.some((elem) => elem.toString() === curr.toString()) ? 
+          [...acc,  curr] : acc , 
+        [] 
+    )
+}
+console.log(`Removed dups : ${removeDups(array2)}`) ;
